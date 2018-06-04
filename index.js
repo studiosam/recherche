@@ -3,8 +3,9 @@ function SetImage(image) {
     console.log(image)
     $('#imageDiv').fadeOut(500);
     
-    setTimeout(function () {
+    setTimeout(function (){
         $('#imageDiv').css('background-image', link);
+        $('#imageDiv').css('background-size', 'contain');
         $('#imageDiv').fadeIn(500);
     }, 1000);
 }
